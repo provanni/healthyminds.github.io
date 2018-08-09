@@ -1,486 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--<link rel="stylesheet" type="text/css" href="animate.css"/>-->
-<link rel="stylesheet" href="semantic.min.css"> 
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="semantic.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-</script>
-<title>Healthy Minds UofT</title>
-<style>
-	
-	/*font-family: 'Roboto', sans-serif;*/
-	@media only screen and (max-width: 500px) {
-   /* body {
-        background-color: lightblue;} */
-
-	} }
-    @media only screen and (max-width: 800px){
-    .home img {
-    	display: flex;
-    	flex-wrap: wrap;
-    } }
-    @media only screen and (min-width: 200px) and (max-width: 800px){
-    .dropbtn {
-	background-color: transparent;
-	color: black;
-	border: none;
-	cursor: pointer;
-	font-size: 50px;
-	font-family: 'garamond';
-	float: left;
-	}
-
-	.dropdown {
-	position: relative;
-	display: inline-block;
-	padding-right: 50px; 
-	padding-left: 50px;
-	padding-top: 75px;
-	float: left; 
-	}
-
-	.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: white;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	}
-
-	.dropdown-content a {
-	color: gray;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	cursor: pointer;
-	}
-
-
-	.dropdown:hover .dropdown-content {
-	display: block;
-	color: black
-	}
-
-	.item {
-	display: none;
-	font-size: 20px;
-	}
-
-	.item:hover {
-	color: black;
-	}}
-
-	@media only screen and (min-width: 801px) {
-	.dropbtn {display: none;
-		visibility: hidden;}
-
-	.dropdown {
-		visibility: hidden;
-		display: none;}}
-
-	@media only screen and (max-width: 800px){
-
-	.no-dropdown {display: none; visibility: hidden;}
-	}
-
-	@font-face {
-        font-family: robotob;
-        src: url('Roboto-Bold.ttf');
-    }
-
-    @font-face {
-        font-family: bebas;
-        src: url('BebasNeue Bold.otf');
-    }
-
-
-    .team {
-    	display: none;
-   	}
-
-   	.news {
-   		display: none;
-   		padding: none;
-   	}
-
-   	.sponsors {
-    	display: none;
-   	}
-
-    .mentorship {
-   		display: none;
-   	}
-
-   	.events {
-   		display: none;
-   	}
-
-   	.home { 
-   		display:inline;
-   		float: right;
-    	
-   	}
-
-
-	.studypool {
-		padding-left: 120px; 
-		padding-top: 80px;
-		float: left;
-	} 
-
-	.lvlup-img {
-		margin: 100px;
-		float: left;
-		padding-bottom: 50px;
-	}
-
-	.farmers {
-		margin-right: 250px;
-	}
-
-   	.home-content {
-   		float: center;
-   		width: 70%;
-   	}
-
-   	.home-img {
-   		
-   		width: 30%;
-   		height: 30%;
-   		display: flex;
-   		flex-wrap: wrap;
-   		
-   		
-   	}
-
-   	.news {
-   		display:none;
-   		padding: none;
-   	}
-
-
-    .resources {
-    	display: none;
-   	}
-
-
-   	.home img {
-
-    border-radius: 25px;
-    background: url(uni.jpg);
-    float: center;
-    display: flex;
-    flex-wrap: wrap;
- /*   background-position: left top;
-    background-repeat: none;
-    padding: 0px; */
-
-
-   	}
-
-
-	.site-container {
-		margin-top: 5%;
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-		display: flex;
-		flex-wrap: wrap;
-		
-		
-
-	}
-
-/*	.site-container > .home-content {
-		width: 50%;
-		float: left;
-
-	}
-
-	.site-container > .home-img {
-		min-width: 100px;
-		width: 50%;
-		float: center; */
-
-	}
-
-	.menu-logo {
-		width: 50%;
-		margin-left: 25%;
-		margin-right: 25%;
-		padding-left: 10px;
-		padding-top: 10px;
-
-	}
-
-	.page-container.team {
-		height: 550%;
-		
-	}
-
-	.page-container.sponsors {
-		height: 200%;
-	}
-
-	/*.nav-container {
-		width: 0%;
-		margin-left: 0%;
-		margin-right: 0%;
-		margin-bottom: 0%;
-		
-
-	}
-
-	.nav-container.item {
-		font-family: 'Roboto', sans-serif;
-		
-	}
-
-
-	.nav-item {
-		display: inline-block;
-		font-size: 30px;
-		cursor: pointer;
-		font-family: bebas;
-		text-align: center;
-		width: 10%;
-		margin-left: 1%;
-		margin-right: 1%;
-		line-height: 80px;
-		padding: 5px; 
-	} */
-
-	.bglogo {
-      min-height: 100%;
-      min-width: 100
-     /* background-position: center;
-      background-size: cover;
-      background-image: url(logo.png); */
-    }
-
-
-	.headshot:hover {
-     -webkit-filter:grayscale(100%);
-     filter: grayscale(100%);
-}
-
-	.two {
-        -vendor-animation-delay: 2s;
-	}
-
-	.page-heading {
-		font-family: bebas;
-		font-size: 42px;
-		margin-bottom: 2.5%; 
-		
-
-	}
-
-	.page-container {
-		width: 90%;
-		height: 100%;
-		margin-left: 5%;
-		margin-right: 5%;
-		margin-top: 5%;
-		margin-bottom: 5%;
-
-		
-	}
-
-	.page-container img {
-		float: right;
-		
-	}
-
-	.text {
-		font-family: 'Roboto', sans-serif;
-		font-size: 15px;
-		padding: none;
-	}
-
-	.header {
-		font-family: robotob;
-		font-size: 16px;
-		padding: none;
-		/*background-image: url(logo.png);*/
-	}
-
-	.learn-more {
-		display: block;
-		border-radius: 3px;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 12pt;
-		width: 150px;
-		height: 30px;
-		padding: 5px;
-		border: 1px solid #000;
-	}
-
-	.nav-item::hover {
-	
-		text-transform: uppercase;
-		
-	}
-}
-
-/*.dropbtn {
-	background-color: white;
-	color: black;
-	border: none;
-	cursor: pointer;
-	font-size: 50px;
-	font-family: 'garamond';
-	box-shadow: 0px 4px 16px 1px rgba(0,0,0,0.2)
-}
-
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: white;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-}
-
-.dropdown-content a {
-	color: gray;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	cursor: pointer;
-}
-
-
-.dropdown:hover .dropdown-content {
-	display: block;
-	color: black
-}
-
-.item {
-	display: none;
-	font-size: 20px;
-}
-
-.item:hover {
-	color: black; 
-} */
-
-.site-header {
-	width: 80%;
-	height: 121px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	/*background: url(logo.png);
-	background-size: 100px;
-	background-repeat: 1; */
-	position: relative; 
-
-
-	
-}
-
-.header-logo {
- float: left;
- padding-top: 10px;
- padding-left: 10px;
-}
-
-/*.dropbtn {
-	height: 100px;
-	width: 200px;
-	font-size: 50px;
-	font-family: 'Roboto';	
-	position: relative;
-	background-color: transparent;
-	cursor: pointer;
-	border: none;
-	padding: none;
-	padding: 50px;
-	
-} 
-
-.signup {
-	height: 100px;
-	width: 500px;
-	font-size: 30px;
-	font-family: 'Roboto';	
-	position: relative;
-	background-color: transparent;
-	cursor: pointer;
-	border: none;
-
-	
-}*/
-.no-dropdown {
-	width: 80%;
-	padding-left: 50px;
-}
- 
- h1 {
- 	margin-bottom: 10px;
- }
-
-</style> 
-
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="animate.css"/>-->
+	<link rel="stylesheet" href="semantic.min.css">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="semantic.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+
+	<title>Healthy Minds UofT</title>
 </head>
 <body>
 
 		<header class="site-header">
 			<img src="logo.png" class="header-logo" height="120" width="130">
-
-
 				<div class="dropdown">
-	<button class="dropbtn">Menu</button>
-		<div class="dropdown-content">
-				<a onclick="goTo('home')" class="item">Home</a>
-			    <a onclick="goTo('events')" class="item">Upcoming Events</a>
-			    <a onclick="goTo('news')" class="item">Newsletter</a>
-			    <a onclick="goTo('mentorship')" class="item">Mentorship Program</a>
-			   	<a onclick="goTo('resources')" class="item">Resources</a>
-			   	<a onclick="goTo('sponsors')" class="item">Sponsors</a>
-			    <a onclick="goTo('team')" class="item">The Team</a> 
-		</div> 
-
-	
-
+					<button class="dropbtn">Menu</button>
+						<div class="dropdown-content">
+								<a onclick="goTo('home')" class="item">Home</a>
+							    <a onclick="goTo('events')" class="item">Upcoming Events</a>
+							    <a onclick="goTo('news')" class="item">Newsletter</a>
+							    <a onclick="goTo('mentorship')" class="item">Mentorship Program</a>
+							   	<a onclick="goTo('resources')" class="item">Resources</a>
+							   	<a onclick="goTo('sponsors')" class="item">Sponsors</a>
+							    <a onclick="goTo('team')" class="item">The Team</a>
+						</div>
+					</div>
 		</header>
 
-	<div class="site-container"> 
-	<div class="no-dropdown">
-	<!--	<div class="ui page grid">
-			<div class="row">
-				<div class="column">
-					<img class="menu-logo" src="logo.png"/>
+		<div class="page-container home text">
+		<div class="w3-row">
+		  <div class="w3-col m4 l5">
+		    <div class="page-heading">Welcome!</div>
+
+					<div class="home-content">
+					<br>
+						<h1>What We Do</h1>
+
+						<p>This club aims to help students build a strong, supportive community, reduce stigmatization of mental health,
+		      raise awareness to the barriers that those with mental illnesses face on campus, provide strategies for self-care
+		      to maximize each individual's potential for success, and raise the quality of life for students living on and off
+		      campus.</p>
+
+
+					</div>
+		  </div>
+		  <div class="w3-rest">
+		   	<div class="home-img">
+		   		<img src="uni.jpg" width="600" height="350" />
+			</div>
+		  </div>
+		</div>
+				</div> </div>
+
+				<div class="page-container events text">
+					<div class="page-heading">Upcoming Events</div>
+					<a href="http://www.facebook.com/healthymindsut/"><h3>Scavenger Hunt</h3></a>
+					<p><b>When:</b> TBD
+						<br><b>Where:</b> Queen's Park
+						<br><b>What:</b> TBD
+					</p>
+		 			<a href="http://www.facebook.com/healthymindsut/"><h3>Fall Bake Sale</h3></a>
+					<p><b>When:</b> TBD
+						<br><b>Where:</b> TBD
+						<br><b>What:</b> TBD
+									</p>
+		  			<a href="http://www.facebook.com/healthymindsut/"><h3>Community Dinner</h3></a>
+					<p><b>When:</b> TBD
+						<br><b>Where:</b> TBD
+						<br><b>What:</b> TBD
+					</p>
 				</div>
-			</div> 
-		</div> -->
-		<div class="ui large center six item secondary pointing borderless menu"> 
+
+
+	<div class="site-container">
+		<div class="no-dropdown">
+
+		<div class="ui large center six item secondary pointing borderless menu">
 			    <a onclick="goTo('home')" class="item">Home</a>
 			    <a onclick="goTo('events')" class="item">Upcoming Events</a>
 			    <a onclick="goTo('news')" class="item">Newsletter</a>
 			    <a onclick="goTo('mentorship')" class="item">Mentorship Program</a>
 			   	<a onclick="goTo('resources')" class="item">Resources</a>
 			   	<a onclick="goTo('sponsors')" class="item">Sponsors</a>
-			    <a onclick="goTo('team')" class="item">The Team</a> 
- 			   	
- 			</div> 
+			    <a onclick="goTo('team')" class="item">The Team</a>
+ 			</div>
+ 		</div>
 
-		
- 		</div> 
-	
 
 
 		<div class="page-container news">
@@ -491,105 +101,106 @@
   			  <div class="ui clearing divider"></div>
   			  Coming soon.
 			</div>
-
-<!--   		The code below is the template for adding in new newsletter 			issues. Please add the, lastest volume to the top.
--->
-
-<!--			<div class="ui padded piled segment text">
-			  <div class="ui header">Issue #1: January 1, 2017</div>
-  			  <div class="ui clearing divider"></div>
-  			  What is anger? 
-
-
-			</div>
-			<div class="ui padded piled segment text">
-			  <div class="ui header">Issue #2: January 1, 2018</div>
-  			  <div class="ui clearing divider"></div>
-  			  Coming soon.
-			</div>
--->
 		</div>
-		</div>
-
-
-
-		</div>
-
+	</div>
 
 		<div class="page-container mentorship">
 			<div class="page-heading">Peer Support Mentorship Program</div>
 
 			<div class="ui list">
 				<div class="item">
-					<div class="header">Application</div>
-				</div>
-				
+					<h3>About</h3>
+						<p>Our peer mentorship program pairs upper year students who have
+							lived experience with mental illness with 1st	and 2nd year students
+							who are struggling with self-care and their mental health on campus.
+							All mentors are safeTalk certified and equipped with on and off
+							campus resources available to students.<br><br>
 
+							Mentees and Mentors will meet on a monthly basis (at minimum), and
+							will spend the semester working through a WRAP workbook to create
+							a personalized crisis plan. Mentors are encouraged to discuss
+							personal experiences with mental illness and strategies used to
+							overcome their adversity.
+						</p>
+
+						<h4>Mentor applications will be open in the fall.</h4>
+				</div>
 			</div>
 
 		</div>
-<!--<div class="page-container mentorship">
-			<div class="page-heading">Mentorship</div>
-
-		<div class="ui list">
-			 <div class="item">
-			    <a class="header">Resource 1</a>
-			 	<div class="text description">
-			    	Resource description <a>Resource link</a>.
-			 	</div>
-			 </div>
-			</div> -->
 
 		<div class="page-container resources">
 			<div class="page-heading">Resources</div>
 
 		<div class="ui list">
 			 <div class="item">
-			    <a class="header">Resource 1</a>
-			 	<div class="text description">
-			    	Resource description <a>Resource link</a>.
+			    <a class="header" href="https://www.studentlife.utoronto.ca/hwc">Health and Wellness Centre</a>
+			 	<div class="text-description">
+			    <p>The health and wellness centre at the univeristy of Toronto is your
+						first stop if you think you may need some help. <br><br>
+
+						They offer individual
+						counselling or psychotherapy for adjustment and transition issues,
+						anxiety, depression, self-esteem, relationship/family issues,
+						body image and eating issues, sexual orientation, gender identity,
+						etc., pharmacotherapy, embedded councilling, group therapy, and
+						follow a mental wellness framework.</p>
 			 	</div>
+				<hr>
 			 </div>
 			  <div class="item">
-			    <a class="header">Resource 2</a>
-			    <div class="text description">
-			      Resource description <a>Resource link</a>.
+			    <a class="header" href="https://stellasplace.ca">Stella's Place</a>
+			    <div class="text-description">
+			      <p>Stella’s Place offers peer supports, clinical, employment,
+							wellness, and recovery services as well as opportunities to explore
+							your creative self through studio programs. The goal of this
+							holistic approach is to help young adults learn skills, find
+							connection and become empowered to manage their own health. They
+							also offer peer support chat and resources online as a way for
+							people to connect with Stella’s. Everything at Stella’s Place has
+							been, and will always be, designed by young adults, with young
+							adults, for young adults.<br><br>
+
+							We are committed to including young adults with lived and diverse
+							experience in design, delivery and evaluation – along with
+							professionals – to ensure relevant and responsive programs. We
+							will always offer many ways for you to get involved.</p>
 			    </div>
 			  </div>
 			</div>
 		</div>
-	
+
 
 	<div class="page-container sponsors">
 		<div class="page-heading">Sponsors</div>
 <div class="w3-row">
   <div class="w3-col m4 l5">
-	
-			
+
+
 		<div>
 			<br>
 			<h1>Founding Farmers</h1>
-			
-			<p><a href="https://www.forbes.com/sites/brianrashid/2017/03/12/keeping-current-in-changing-times-how-founding-farmers-most-booked-in-us-for-five-years-running/#6aa8b14d5fa8">Founding Farmers</a>: The Most Booked Restaurant In The U.S. 5 Years Running.</p>	
-		</div> 
-	</div> 
+
+			<p><a href="https://www.forbes.com/sites/brianrashid/2017/03/12/keeping-current-in-changing-times-how-founding-farmers-most-booked-in-us-for-five-years-running/#6aa8b14d5fa8">Founding Farmers</a>: The Most Booked Restaurant In The U.S. 5 Years Running.</p>
+		</div>
+	</div>
  <div class="w3-col m4 l7">
 			<a href="https://www.wearefoundingfarmers.com/locations/dc/"><img src="Founding-Farmers.jpg" width="300" height="250" class="farmers"></a>
-			</div> 
+			</div>
 </div>
 		<hr>
 <div class="w3-row">
   <div class="w3-col m4 l5">
-	
+
 
 		<div>
 			<h1>Studypool</h1>
-			
+
 			<p><a href="https://www.entrepreneur.com/article/283320">Studypool</a> is an online marketplace that connects students with questions with tutors who can answer them. <br>Using <a href="https://www.entrepreneur.com/article/283320">Studypool</a> gives you access to thousands of verified tutors to help you with any question at any time. <br><br> Studypool is the largest online tutoring platform. They have helped over 1.4 million students and have close to 45 thousand tutors on their platform. Their mission is to use technology to help students learn more efficiently.
-</p>	</div> </div> 
+</p>	</div> </div>
  <div class="w3-col m4 l7">
 			<a href="http://www.studypool.com" class="studypool"><img src="big-text.png" width="400" height="150"></a>
-			</div> 
+			</div>
 </div>
 
 			<hr>
@@ -598,7 +209,7 @@
 <div class="w3-col m4 l5">
 <div class="levelup">
 			<h1>Level Up Reality</h1>
-			
+
 			<p>Levelup Reality takes you beyond the limits of reality into a rich immersive experience where you can connect with others while engaging all of your senses. Offering virtual reality in Toronto, we have many single and multiplayer experiences in a variety of genres such as adventure, shooters, action, escape rooms, short films, etc.  This entertainment is well-suited to be enjoyed solo, with friends, families, groups, or parties. Come level up your reality today!
 Here are some of the many experiences you can get immersed in at Levelup Reality:
 <ul>
@@ -607,13 +218,13 @@ Here are some of the many experiences you can get immersed in at Levelup Reality
 	<li>Explore the deep sea: Dive into the ocean and interact with exotic aquatic creatures.</li>
 	<li>And many more genres such as adventure, action, escape rooms, short films, etc…</li>
 </ul>
-</p>		
-	</div>	 
+</p>
+	</div>
  </div>
 	<div class="w3-col m4 l7">
 	<a href="https://levelupreality.ca/"> <img src="levelup.png" width="500" height="250" class="lvlup-img"></a>
-		</div> 
-	</div> 
+		</div>
+	</div>
 </div>
 
 
@@ -624,10 +235,10 @@ Here are some of the many experiences you can get immersed in at Levelup Reality
 				<div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="sunny.jpg" class="headshot" title="Nicole is a fourth year student studying Psychology and Cognitive Science. Inspired to provide guidance and community to other students suffering from mental illness, she founded Healthy Minds U of T in fall 2016. Since then, Nicole has discovered her love of leadership and helping others.
+				        <img src="team_mugs/sunny.jpg" class="headshot" title="Nicole is a fourth year student studying Psychology and Cognitive Science. Inspired to provide guidance and community to other students suffering from mental illness, she founded Healthy Minds U of T in fall 2016. Since then, Nicole has discovered her love of leadership and helping others.
 
 In her spare time you will find her playing Hearthstone, drinking tea, and trying to get her cats to love her.
- 
+
 ">
 				      </div>
 				      <div class="content">
@@ -639,7 +250,7 @@ In her spare time you will find her playing Hearthstone, drinking tea, and tryin
 				  <div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="sunny.jpg" class="headshot" title="Sunny is a 4th year student at U of T, studying Neuroscience, Psychology, and Buddhism & Mental Health. 
+				        <img src="team_mugs/sunny.jpg" class="headshot" title="Sunny is a 4th year student at U of T, studying Neuroscience, Psychology, and Buddhism & Mental Health.
 
 In her spare time (all the time), youll find her:
 
@@ -660,7 +271,7 @@ Sunny is an advocate for Healthy Minds because she realizes the importance of ba
 				  <div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="sunny.jpg" class="headshot" title="Sarah is in her fourth year of studies at UofT in Religion and Philosophy, with a little bit of this and a little bit of that always on the side. She is passionate about suicide prevention, youth and adolescent mental health, and advocacy for accessible mental health resources in immigrant and low-income urban communities. 
+				        <img src="team_mugs/sunny.jpg" class="headshot" title="Sarah is in her fourth year of studies at UofT in Religion and Philosophy, with a little bit of this and a little bit of that always on the side. She is passionate about suicide prevention, youth and adolescent mental health, and advocacy for accessible mental health resources in immigrant and low-income urban communities.
 
 In times of her leisure, you can find Sarah at the gym, talking to her herb and vegetable plants, face buried in nutrition and spirituality books, meditating, or curled up shoeless (no matter where she is) with a cup of caffeinated liquid gold. Sarah is always eager at the opportunity for a personal conversation—don’t be shy and come say hi!">
 				      </div>
@@ -675,7 +286,7 @@ In times of her leisure, you can find Sarah at the gym, talking to her herb and 
 				<div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="anika.jpg" class="headshot" title="Anika is a third year student studying Global Heath. Anika wants to support and empower others towards the journey to a healthy mind and an overall well-balanced lifestyle. 
+				        <img src="team_mugs/anika.jpg" class="headshot" title="Anika is a third year student studying Global Heath. Anika wants to support and empower others towards the journey to a healthy mind and an overall well-balanced lifestyle.
 
 When not buried in her studies, you can find Anika exploring new neighborhoods, eating out with family and friends, biking, and watching TV shows.">
 				      </div>
@@ -688,13 +299,13 @@ When not buried in her studies, you can find Anika exploring new neighborhoods, 
 				  <div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="anika.jpg" class="headshot" title="Bushra is a 3rd year student at UofT, majoring in Neuroscience. 
+				        <img src="team_mugs/anika.jpg" class="headshot" title="Bushra is a 3rd year student at UofT, majoring in Neuroscience.
 
 Bushra's favourite pastimes include:
 
 1. Writing about her life experiences
 2. Scrolling through Facebook and gushing over cute animal memes
-3. Stress napping and baking during midterm and finals season 
+3. Stress napping and baking during midterm and finals season
 
 Bushra believes in mental health advocacy because through advocates like herself, she was able to find help on campus when she needed the most. Bushra believes in change through strong support systems and community. She hopes to share her experiences and learn from her peers and overall have an amazing time with the people at Healthy Minds!">
 				      </div>
@@ -707,7 +318,7 @@ Bushra believes in mental health advocacy because through advocates like herself
 				  <div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="robyn.jpg" class="headshot">
+				        <img src="team_mugs/robyn.jpg" class="headshot">
 				      </div>
 				      <div class="content">
 				      	<div class="header">Robyn Cottrell</div>
@@ -720,7 +331,7 @@ Bushra believes in mental health advocacy because through advocates like herself
 				<div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="robyn.jpg" class="headshot">
+				        <img src="team_mugs/robyn.jpg" class="headshot">
 				      </div>
 				      <div class="content">
 				      	<div class="header">TBD</div>
@@ -731,7 +342,7 @@ Bushra believes in mental health advocacy because through advocates like herself
 				  <div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="robyn.jpg" class="headshot">
+				        <img src="team_mugs/robyn.jpg" class="headshot">
 				      </div>
 				      <div class="content">
 				      	<div class="header">Crystal Lin</div>
@@ -742,7 +353,7 @@ Bushra believes in mental health advocacy because through advocates like herself
 				  <div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="robyn.jpg" class="headshot">
+				        <img src="team_mugs/robyn.jpg" class="headshot">
 				      </div>
 				      <div class="content">
 				      	<div class="header">TBD</div>
@@ -755,7 +366,7 @@ Bushra believes in mental health advocacy because through advocates like herself
 				<div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="robyn.jpg" class="headshot">
+				        <img src="team_mugs/robyn.jpg" class="headshot">
 				      </div>
 				      <div class="content">
 				      	<div class="header">TBD</div>
@@ -766,7 +377,7 @@ Bushra believes in mental health advocacy because through advocates like herself
 				  <div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="robyn.jpg" class="headshot">
+				        <img src="team_mugs/robyn.jpg" class="headshot">
 				      </div>
 				      <div class="content">
 				      	<div class="header">Adam Lieberman</div>
@@ -777,7 +388,7 @@ Bushra believes in mental health advocacy because through advocates like herself
 				  <div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="robyn.jpg" class="headshot">
+				        <img src="team_mugs/robyn.jpg" class="headshot">
 				      </div>
 				      <div class="content">
 				      	<div class="header">TBD</div>
@@ -790,60 +401,17 @@ Bushra believes in mental health advocacy because through advocates like herself
 				<div class="column">
 				    <div class="ui fluid card">
 				      <div class="image">
-				        <img src="robyn.jpg" class="headshot">
+				        <img src="team_mugs/robyn.jpg" class="headshot">
 				      </div>
 				      <div class="content">
 				      	<div class="header">TBD</div>
 						<span class="text">First Year Representative</span>
 				      </div>
-				    </div>			  
+				    </div>
 				</div>
 			</div>
 		</div>
 
-<div class="page-container home text">
-<div class="w3-row">
-  <div class="w3-col m4 l5">
-    <div class="page-heading">Welcome!</div>
-			
-			<div class="home-content">
-			<br>
-				<h1>What We Do</h1>
-
-				<p>This club aims to help students build a strong, supportive community, reduce stigmatization of mental health,
-      raise awareness to the barriers that those with mental illnesses face on campus, provide strategies for self-care
-      to maximize each individual's potential for success, and raise the quality of life for students living on and off
-      campus.</p>
-
-				
-			</div>
-  </div>
-  <div class="w3-rest">
-   	<div class="home-img">
-   		<img src="uni.jpg" width="600" height="350" />
-	</div>
-  </div>
-</div> 
-		</div> </div> 
-
-		<div class="page-container events text">
-			<div class="page-heading">Upcoming Events</div>
-			<a href="http://www.facebook.com/healthymindsut/"><h3>Scavenger Hunt</h3></a>
-			<p><b>When:</b> TBD
-				<br><b>Where:</b> Queen's Park
-				<br><b>What:</b> TBD	
-			</p>
- 			<a href="http://www.facebook.com/healthymindsut/"><h3>Fall Bake Sale</h3></a>
-			<p><b>When:</b> TBD
-				<br><b>Where:</b> TBD
-				<br><b>What:</b> TBD
-							</p>
-  			<a href="http://www.facebook.com/healthymindsut/"><h3>Community Dinner</h3></a>
-			<p><b>When:</b> TBD
-				<br><b>Where:</b> TBD
-				<br><b>What:</b> TBD 
-			</p> 
-		</div>
 
 
 
